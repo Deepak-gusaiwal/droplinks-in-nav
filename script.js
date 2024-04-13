@@ -1,19 +1,15 @@
-let inputCheckboxes = [...document.querySelectorAll(".menu >li > input[type='checkbox']")]
-let innerInputCheckboxes = [...document.querySelectorAll(".menu >li > ul li > input[type='checkbox']")]
-
-
-
-
-function dropLinksToggling(dropLinksList){
-    dropLinksList.forEach((checkbox)=>{
-        checkbox.addEventListener('click',()=>{
-            dropLinksList.forEach(cb=>{
-                if(cb !== checkbox){
+function toggleCheckboxes(selector) {
+    let checkboxes = document.querySelectorAll(selector);
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('click', () => {
+            checkboxes.forEach(cb => {
+                if (cb !== checkbox) {
                     cb.checked = false;
                 }
-            })
-        })
-    })
+            });
+        });
+    });
 }
-dropLinksToggling(inputCheckboxes)
-dropLinksToggling(innerInputCheckboxes)
+
+toggleCheckboxes(".menu > li > input[type='checkbox']");
+toggleCheckboxes(".menu > li > ul li > input[type='checkbox']");
