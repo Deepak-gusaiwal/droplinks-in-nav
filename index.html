@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="" class="logoBox"> LOGO </a>
+        <ul class="menu">
+          <li><a href="">Home</a></li>
+          <li class="dropLink">
+            <a href="">About</a>
+            <input type="checkbox" name="DropLink" id="About" />
+            <label for="About">
+              <i class="fa-solid fa-plus"></i>
+              About
+              <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+            </label>
+            <ul>
+                <li><a href="">About-1</a></li>
+                <li><a href="">About-2</a></li>
+            </ul>
+          </li>
+          <li class="dropLink">
+            <a href="">Services</a>
+            <input type="checkbox" name="DropLink" id="Services" />
+            <label for="Services">
+              <i class="fa-solid fa-plus"></i>
+              Services
+              <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+            </label>
+            <ul>
+              <li class="dropLink">
+                <a href="">Service-1</a>
+                <input type="checkbox" name="subDropLink" id="Service-1" />
+                <label for="Service-1">
+                  <i class="fa-solid fa-plus"></i>
+                  Service-1
+                  <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </label>
+
+                <ul>
+                  <li><a href="">Sub Serivice 1-1</a></li>
+                  <li><a href="">Sub Serivice 1-2</a></li>
+                </ul>
+              </li>
+              <li class="dropLink">
+                <a href="">Service-2</a>
+                <input type="checkbox" name="subDropLink" id="Service-2" />
+                <label for="Service-2">
+                  <i class="fa-solid fa-plus"></i>
+                  Service-2
+                  <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </label>
+                <ul>
+                  <li><a href="">Sub Serivice 2-1</a></li>
+                  <li><a href="">Sub Serivice 2-2</a></li>
+                </ul>
+              </li>
+              <li><a href="">Service-3</a></li>
+            </ul>
+          </li>
+          <li><a href="">Cotact Us</a></li>
+        </ul>
+
+        <span id="navToggler">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </nav>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>
